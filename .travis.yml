@@ -11,4 +11,7 @@ install:
   - wget http://files.vagrantup.com/packages/be0bc66efc0c5919e92d8b79e973d9911f2a511f/vagrant_1.0.5_i686.deb
   - sudo dpkg -i vagrant_1.0.5_i686.deb
 script:
-  - date
+  - /opt/vagrant/bin/vagrant up
+  - ls -a
+  - /opt/vagrant/bin/vagrant ssh --command "touch /vagrant/smash_it_with_a_hammer"
+  - ls -a
