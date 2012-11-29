@@ -3,3 +3,5 @@ rvm:
   - "1.9.3"
 install:
   - date
+script:
+  - date
