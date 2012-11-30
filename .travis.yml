@@ -12,6 +12,6 @@ install:
   - sudo dpkg -i vagrant_1.0.5_i686.deb
 script:
   - /opt/vagrant/bin/vagrant up
-  - ls -a
+  - ls
   - /opt/vagrant/bin/vagrant ssh --command "touch /vagrant/smash_it_with_a_hammer"
-  - ls -a
+  - ls
